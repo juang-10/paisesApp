@@ -32,7 +32,7 @@ export class PorRegionComponent {
     this.hayError = false;
     this.regionActiva = region;
     this.paises = [];
-    this.paisService.buscarCapital(region)
+    this.paisService.buscarRegion(region)
       .subscribe({
         next: (paises => {
           console.log(paises)
